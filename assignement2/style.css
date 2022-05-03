@@ -1,37 +1,44 @@
 * {
   box-sizing: border-box;
-  padding: 10px 0px 50px 0px;
+  padding: 0;
   margin: 0;
 }
 
-@media screen and (min-width: 992px) {
-  #container {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
+body {
+   padding: 10px 0px 0px 0px;
+   margin-bottom: 50px;
+   height: 100vh;
+}
 
-  .menu-heading {
-    text-align: center;
-    padding: 0px 0px 50px 0px;
-    font-size: 175%;
-    font-weight: 600;
-  }
+#container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
 
+.menu-heading {
+  text-align: center;
+  padding: 0px 0px 50px 0px;
+  font-size: 175%;
+  font-weight: 600;
+}
 
-  .div-container {
-      padding: 0px 20px 20px 20px;
-      width: 33%;
-      float: left;  
-  }
+#div-container1,
+#div-container2,  
+#div-container3 {
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+}
 
-  #first,#second,#third {
-    border: 1px solid black;
-    padding: 0px 0px 8px 8px;
-    position: relative;
-    height: 200px;
-    background: #bfbfbf;
-  }
+#first,#second,#third {
+  border: 1px solid black;
+  padding: 0px 0px 8px 8px;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background: #bfbfbf;
+
+}
 
 #first-title {
   background: pink;
@@ -47,7 +54,7 @@
   border: 1px solid black;
   border-top:0;
 }
-  
+
 #second-title {
   color: white;
   background: red;
@@ -83,9 +90,34 @@
   position: relative;
   top: 60px;
   padding: 0 20px
- }
+}
+
+// medium devices
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #div-container1,
+  #div-container2 {
+    width: 50%;
+    float: left;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  #div-container3 {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+  }
   
 }
 
+///large devices
 
+@media (min-width: 922px){
+  #div-container1,
+  #div-container2,
+  #div-container3{
+      padding: 0px 20px 20px 20px;
+      width: 33%;
+      float: left;  
+  }
+}
 
