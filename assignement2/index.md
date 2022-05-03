@@ -8,6 +8,20 @@
     <title>Assignement 2.1</title>
     
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+    width: 50%;
+    float: left;
+}
+      
+
+
+</style>
 
   </head>
 <body>
