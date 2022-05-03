@@ -17,6 +17,7 @@
 div {
     width: 50%;
     float: left;
+    padding: 0px 20px 20px;
 }
       
 
@@ -27,12 +28,15 @@ div {
 <body>
   <div>
     <div id="first">
+      <h3>Chicken</h3>
     </div>
     
     <div id="second">
+      <h3>Meat</h3>
     </div>
     
     <div id="third">
+      <h3>Sushi</h3>
     </div>
     
     
