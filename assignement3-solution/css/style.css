@@ -34,6 +34,10 @@ body {
     padding: 0px 30px;
 }
 
+.navbar-nav {
+    height: 90vh;
+}
+
 #navbarSupportedContent a {
     color:white;
 }
