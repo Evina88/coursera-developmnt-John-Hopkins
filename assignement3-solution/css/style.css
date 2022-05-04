@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    padding: 70px 30px 0px;
+    margin: 0 auto;
+}
+
+.menu-heading {
+    padding: 0px 0px 50px 0px;
+    font-size: 175%;
+    font-weight: 600;
+}
+
+.tall-section {
+    height: 2000px;
+    background: #dee2e6;
+}
+
+.section-heading {
+    padding: 20px;
+}
+
+.section-text {
+    padding: 0px 30px;
+}
+
+#navbarSupportedContent a {
+    color:white;
+}
+
+#navbarSupportedContent li:nth-child(1), li:nth-child(2) {
+    border-bottom: 1px solid white;
+}
