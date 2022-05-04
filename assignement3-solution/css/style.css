@@ -35,7 +35,8 @@ body {
 }
 
 .navbar-nav {
-    height: 90vh;
+    height: 100vh;
+    padding-top: 20px;
 }
 
 #navbarSupportedContent a {
