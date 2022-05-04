@@ -5,8 +5,7 @@
 }
 
 body {
-   padding: 10px 0px 0px 0px;
-   margin-bottom: 50px;
+   padding: 20px 0px 50px 0px;
    height: 100vh;
 }
 
@@ -23,12 +22,7 @@ body {
   font-weight: 600;
 }
 
-#div-container1,
-#div-container2,  
-#div-container3 {
-  width: 100%;
-  padding: 0px 20px 20px 20px;
-}
+
 
 #first,#second,#third {
   border: 1px solid black;
@@ -37,7 +31,6 @@ body {
   height: 250px;
   overflow: hidden;
   background: #bfbfbf;
-
 }
 
 #first-title {
@@ -92,32 +85,37 @@ body {
   padding: 0 20px
 }
 
-// medium devices
+
+@media (min-width: 992px){
+  #container1,
+  #container2,
+  #container3 {
+    padding: 0px 20px 20px 20px;
+    width: 33%;
+    float: left;
+    margin-bottom: 15px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #div-container1,
-  #div-container2 {
+  #container1,
+  #container2 {
     width: 50%;
     float: left;
     padding: 0px 20px 20px 20px;
   }
   
-  #div-container3 {
+  #container3 {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+  }  
+}
+
+@media (max-width: 767px) {
+  #container1,
+  #container2,
+  #container3 {
     width: 100%;
     padding: 0px 20px 20px 20px;
   }
-  
 }
-
-///large devices
-
-@media (min-width: 922px){
-  #div-container1,
-  #div-container2,
-  #div-container3{
-      padding: 0px 20px 20px 20px;
-      width: 33%;
-      float: left;  
-  }
-}
-
