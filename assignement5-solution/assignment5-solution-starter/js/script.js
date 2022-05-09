@@ -97,8 +97,13 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      // var chosenCategoryShortName = categories[randomArrayIndex];
-      
+      document.querySelector("#main-content")
+      .innerHTML = homeHtml;
+
+      chooseRandomCategory(categories);
+      console.log(chooseRandomCategory(categories));
+      //var chosenCategoryShortName =  randomArrayIndex;
+
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
@@ -138,6 +143,8 @@ function chooseRandomCategory (categories) {
   return categories[randomArrayIndex];
 
 }
+
+
 
 
 // Load the menu categories view
